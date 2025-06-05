@@ -24,6 +24,7 @@ add_exception_handlers(app)
 app.include_router(natal_chart_router.router)
 app.include_router(transit_router.router)
 app.include_router(svg_chart_router.router) # Adicionando o router SVG
+app.include_router(webhook_router.router)
 
 @app.get("/", tags=["Root"], summary="Endpoint raiz da API")
 async def read_root():
