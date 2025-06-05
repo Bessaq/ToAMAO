@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import natal_chart_router, transit_router, svg_chart_router
+from app.routers import natal_chart_router, transit_router, svg_chart_router, webhook_router
 from app.exceptions import add_exception_handlers
 import uvicorn
 import os
